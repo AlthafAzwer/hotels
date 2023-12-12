@@ -1,0 +1,682 @@
+/* Reset some default styles for better consistency */
+body, h1, h2, h3, p, ul, li {
+    margin: 0;
+    padding: 0;
+}
+
+/* Apply a background color and set font styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f2f2f2; /* Background color for the entire page */
+    color: #333; /* Text color */
+}
+
+/* Header styles */
+.header {
+    text-align: center;
+    background-color: #ffffff; /* Header background color */
+    padding: 20px;
+    
+}
+
+.header h1 {
+    font-size: 36px;
+    color: #333; /* Heading color */
+}
+
+.header p {
+    font-size: 18px;
+    color: #666; /* Subheading color */
+}
+
+/* Logo styles */
+.logo {
+    position: absolute; /* Position the logo absolutely */
+    top: 0; /* Align it to the top */
+    left: 0; /* Align it to the left */
+    padding: 0px; /* Add padding for spacing */
+}
+
+/* Adjust the logo's size as needed */
+.logo img {
+    width: auto; /* Set the desired width */
+    height: 70px; /* Maintain aspect ratio */
+}
+
+/* Navigation bar styles */
+nav {
+    background-color: black; /* Navbar background color */
+   
+}
+
+nav ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    padding: 28px;
+}
+
+nav li {
+    margin: 0 15px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #fff; /* Navbar link color */
+    font-weight: bold;
+    align-items: center;
+}
+
+nav a:hover {
+    background-color: lightgrey; /* Highlight color on hover */
+    border-radius: 5px;
+    padding: 5px 10px;
+}
+/* Style the dropdown menu */
+/* Style the submenu */
+nav ul li .submenu {
+    display: none;
+    position: absolute;
+    background-color:black;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    border: 1px solid #ddd;
+}
+
+nav ul li .submenu li {
+    display: block;
+    padding: 10px 0; /* Add padding to create space between submenu items */
+}
+
+nav ul li:hover .submenu {
+    display: block; /* Show the submenu on hover */
+}
+
+
+
+/* Style the promotion offer text */
+.promotion-offer {
+    position: absolute;
+    top: 9%; /* Adjust the vertical position as needed */
+    left: 20%; /* Center horizontally */
+    transform: translateX(-50%); /* Center precisely horizontally */
+    background-color: rgba(0, 0, 0, 0.7); /* Semi-transparent background color */
+    color: #fff; /* Text color */
+    padding: 10px 20px; /* Adjust padding as needed */
+    border-radius: 5px;
+    font-weight: bold;
+    font-size: 18px; /* Adjust font size as needed */
+    text-align: center; /* Center-align text */
+}
+
+
+/* Hero image styles */
+.hero img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* Introduction section styles */
+.introduction {
+    text-align: center;
+    padding: 30px;
+}
+
+.introduction h2 {
+    font-size: 30px;
+    color: #333; /* Heading color */
+}
+
+.introduction p {
+    font-size: 18px;
+    color: #666; /* Text color */
+}
+
+/* Subsection styles */
+.subsections {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding: 30px;
+}
+
+.subsection {
+    text-align: center;
+    width: 30%; /* Adjust width as needed for responsiveness */
+    margin-bottom: 20px;
+}
+
+.subsection img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+.subsection h3 {
+    font-size: 24px;
+    color: #333; /* Heading color */
+    margin: 10px 0;
+}
+
+.subsection p {
+    font-size: 20px;
+    color: #666; /* Text color */
+}
+
+.subsection:hover {
+    background-color: lightgrey; /* Highlight color on hover */
+    border-radius: 5px;
+}
+
+
+/* Styles for the Gym and Spa section */
+.gym {
+    background-color: #f9f9f9;
+    padding: 40px 0;
+    text-align: center;
+}
+
+.section-content {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.section-text {
+    flex: 1;
+    text-align: left;
+    padding: 20px;
+}
+
+.section-image {
+    flex: 1;
+    text-align: center;
+}
+
+.section-image img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.section-text h2 {
+    font-size: 32px;
+    color: #333;
+}
+
+.section-text p {
+    font-size: 18px;
+    color: #666;
+    line-height: 1.5;
+}
+
+/* Media query for responsiveness */
+@media (max-width: 768px) {
+    .section-content {
+        flex-direction: column;
+    }
+
+    .section-text {
+        padding: 20px 0;
+    }
+}
+
+
+
+/* Styles for the footer */
+footer {
+    background-color: black;
+    color: #fff;
+    text-align: center;
+    padding: 7px 0;
+}
+
+.footer-content {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer-logo img {
+    max-width: 150px; /* Adjust the size as needed */
+    margin-bottom: 2px;
+  
+}
+
+.footer-text p {
+    margin: 0;
+}
+
+.social-link {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 10px;
+    font-size: 18px;
+}
+
+.social-link:hover {
+    text-decoration: underline;
+}
+
+.fa {
+    padding: 20px;
+    font-size: 30px;
+    width: 50px;
+    text-align: center;
+    text-decoration: none;
+  }
+  
+  /* Add a hover effect if you want */
+  .fa:hover {
+    opacity: 0.7;
+  }
+  
+  /* Set a specific color for each brand */
+  
+  /* Facebook */
+  .fa-facebook {
+    background: #3B5998;
+    color: white;
+  }
+  
+  /* Twitter */
+  .fa-twitter {
+    background: #55ACEE;
+    color: white;
+  }
+  
+
+
+/* Style for the branch container */
+.branch {
+    display: flex;
+    background-color: #f9f9f9; /* Background color */
+    border-radius: 10px;
+    margin-bottom: 20px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2); /* Box shadow for a subtle 3D effect */
+    overflow: hidden; /* Hide any overflow content */
+}
+
+/* Style for the branch information */
+.branch-info {
+    flex: 1;
+    padding: 20px;
+}
+
+/* Style for the branch name */
+.branch-info h2 {
+    font-size: 24px;
+    margin: 0;
+    color: #333; /* Text color */
+}
+
+/* Style for location and rating */
+.branch-info p {
+    margin: 5px 0;
+    font-size: 19px;
+    color: #666; /* Text color */
+}
+
+/* Style for the branch description */
+.branch-info p:last-child {
+    color: #444; /* Slightly darker text color for description */
+}
+
+/* Style for the branch image */
+.branch-image {
+    flex: 1;
+    overflow: hidden;
+    position: relative;
+  
+}
+
+.branch-image img {
+    width: 100%;
+    height: auto;
+    display: block;
+    transition: transform 0.3s ease; /* Add a subtle image hover effect */
+}
+
+/* Style for the branch image on hover */
+.branch-image:hover img {
+    transform: scale(1.05); /* Enlarge the image slightly on hover */
+}
+
+/* Style for the branch map */
+.branch-map {
+    flex: 1;
+    overflow: hidden;
+    position: relative;
+}
+
+.branch-map iframe {
+    width: 100%;
+    height: 100%;
+    border: none; /* Remove iframe border */
+}
+
+/* Style for the map iframe */
+iframe {
+    width: 100%; /* Make the iframe width 100% of its container */
+    height: 400px; /* Set the height to your desired value */
+    border: none; /* Remove iframe border */
+    border-radius: 10px; /* Add border radius for a rounded appearance */
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2); /* Add a subtle box shadow */
+
+}
+
+
+
+/* Style for the summary table */
+.summary-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+/* Style for table header */
+.summary-table th {
+    background-color: #333;
+    color: lightcoral;
+    font-weight: bold;
+    padding: 10px;
+    text-align: left;
+}
+
+/* Style for table rows */
+.summary-table td {
+    border: 1px solid #ddd;
+    padding: 10px;
+}
+
+/* Style for alternating row background color */
+.summary-table tbody tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+/* Style for the table footer */
+tfoot {
+    background-color: #f9f9f9; /* Background color */
+    color: #333; /* Text color */
+    font-weight: bold;
+    font-size: 14px;
+    padding: 10px; /* Spacing around the footer content */
+    text-align: center; /* Center-align the content */
+}
+
+/* Styles for the header section */
+header {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 30px 0;
+}
+
+header h1 {
+    font-size: 36px;
+    margin-bottom: 10px;
+}
+
+header p {
+    font-size: 18px;
+}
+
+/* Styles for individual adventures */
+.adventure {
+    margin: 30px 0;
+    padding: 20px;
+    border: 1px solid white;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    position: relative;
+}
+
+.adventure h2 {
+    font-size: 60px;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.adventure-image {
+    text-align: center;
+}
+
+.adventure-image img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.adventure-description {
+    margin-top: 20px;
+    font-size: 20px;
+}
+
+.adventure-location {
+    margin-top: 20px;
+}
+
+
+
+
+
+/* Styles for the booking page */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+}
+
+.booking-form {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    margin: 20px;
+    padding: 20px;
+}
+
+.booking-form h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    text-align: center;
+    color: #333;
+}
+
+/* Styles for form elements */
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+label {
+    font-size: 16px;
+    margin-bottom: 8px;
+    color: #555;
+}
+
+select, input[type="date"], input[type="number"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+button[type="submit"] {
+    background-color: #007BFF;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-size: 18px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button[type="submit"]:hover {
+    background-color: #0056b3;
+}
+
+/* Styles for the Personal Details Form */
+.personal-details {
+    background-color: #f9f9f9;
+    padding: 40px 0;
+    text-align: center;
+}
+
+.form-container {
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+.form-container h2 {
+    font-size: 32px;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+form {
+    text-align: left;
+}
+
+label {
+    display: block;
+    font-size: 18px;
+    color: #666;
+    margin-top: 10px;
+}
+
+input {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    margin-top: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button[type="submit"] {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 20px;
+    font-size: 16px;
+    margin-top: 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* Media query for responsiveness */
+@media (max-width: 768px) {
+    .form-container {
+        padding: 20px;
+    }
+}
+
+
+/* Styles for the Restaurant Page */
+.restaurant {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 40px;
+    border-bottom: 1px solid #ccc;
+}
+
+.restaurant-image img {
+    max-width: 300px; /* Adjust image size as needed */
+    height: auto;
+}
+
+.restaurant-info {
+    flex: 1;
+    padding: 0 20px;
+}
+
+.restaurant-info h2 {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.restaurant-info p {
+    font-size: 18px;
+    color: #666;
+    margin-bottom: 20px;
+}
+
+.restaurant-info a {
+    display: inline-block;
+    background-color: #333;
+    color: #fff;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 18px;
+}
+
+.restaurant-info a:hover {
+    background-color: #555;
+}
+#menu{
+    display: none;
+}
+nav label{
+    display: none;
+
+}
+
+
+@media (max-width: 768px) {
+    /* CSS for smaller screens */
+
+    .subsections{
+        display: block;
+        
+    }
+    .subsection{
+        width: 100%;
+    }
+
+    .section-text{
+        text-align: center;
+    }
+    nav ul li{
+        font-size: 0.5em;
+    }
+    .logo{
+        display: none;
+    }
+    .hero-content{
+        font-size: x-small;
+
+    }
+    body{
+        margin: 5px;
+    }
+    .hero{
+        padding-left: 23px;
+    }
+    /* Adjust styles to fit smaller screens here */
+}
+
+
+
+
+
+
+
+
+
+

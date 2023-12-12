@@ -1,0 +1,304 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f5f5f5;
+}
+
+.booking-section {
+    background-color: #fff;
+    margin: 20px;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h3 {
+    color: #333;
+}
+
+label {
+    display: block;
+    margin-bottom: 8px;
+    color: #555;
+}
+
+input,
+select {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+select {
+    cursor: pointer;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #3498db;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+button:hover {
+    background-color: #2980b9;
+}
+
+.table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+.table th,
+.table td {
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: left;
+}
+
+.table th {
+    background-color: #3498db;
+    color: #fff;
+}
+
+.table tbody tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+.table tfoot {
+    font-weight: bold;
+}
+
+.promo-code input {
+    width: calc(100% - 20px);
+}
+
+.summary-table {
+    margin-top: 20px;
+}
+
+.buttons {
+    margin-top: 20px;
+}
+
+/* Add more styles as needed */
+.summary-table {
+    margin-top: 20px;
+    border-collapse: collapse;
+    width: 100%;
+  }
+  
+  th, td {
+    padding: 10px;
+    border: 1px solid #ddd;
+  }
+  
+  th {
+    font-weight: bold;
+    text-align: left;
+  }
+  
+  #subtotal, #discount, #total-payable {
+    font-weight: bold;
+  }
+  table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  th, td {
+    border: 1px solid black;
+    padding: 10px;
+  }
+  
+  th {
+    background-color: #ccc;
+  }
+  
+  img {
+    width: 100px;
+    height: 100px;
+  }
+  /* Styles for the footer */
+footer {
+    background-color: black;
+    color: #fff;
+    text-align: center;
+    padding: 7px 0;
+}
+
+.footer-content {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer-logo img {
+    max-width: 150px; /* Adjust the size as needed */
+    margin-bottom: 2px;
+  
+}
+
+.footer-text p {
+    margin: 0;
+}
+
+.social-link {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 10px;
+    font-size: 18px;
+}
+
+.social-link:hover {
+    text-decoration: underline;
+}
+
+.fa {
+    padding: 20px;
+    font-size: 30px;
+    width: 50px;
+    text-align: center;
+    text-decoration: none;
+  }
+  
+  /* Add a hover effect if you want */
+  .fa:hover {
+    opacity: 0.7;
+  }
+  
+  /* Set a specific color for each brand */
+  
+  /* Facebook */
+  .fa-facebook {
+    background: #3B5998;
+    color: white;
+  }
+  
+  /* Twitter */
+  .fa-twitter {
+    background: #55ACEE;
+    color: white;
+  }
+  body, h1, h2, h3, p, ul, li {
+    margin: 0;
+    padding: 0;
+}
+
+/* Apply a background color and set font styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f2f2f2; /* Background color for the entire page */
+    color: #333; /* Text color */
+}
+
+/* Header styles */
+.header {
+    text-align: center;
+    background-color: #ffffff; /* Header background color */
+    padding: 20px;
+    
+}
+
+.header h1 {
+    font-size: 36px;
+    color: #333; /* Heading color */
+}
+
+.header p {
+    font-size: 18px;
+    color: #666; /* Subheading color */
+}
+
+/* Logo styles */
+.logo {
+    position: absolute; /* Position the logo absolutely */
+    top: 0; /* Align it to the top */
+    left: 0; /* Align it to the left */
+    padding: 0px; /* Add padding for spacing */
+}
+
+/* Adjust the logo's size as needed */
+.logo img {
+    width: auto; /* Set the desired width */
+    height: 70px; /* Maintain aspect ratio */
+}
+
+/* Navigation bar styles */
+nav {
+    background-color: black; /* Navbar background color */
+   
+}
+
+nav ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    padding: 28px;
+}
+
+nav li {
+    margin: 0 15px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #fff; /* Navbar link color */
+    font-weight: bold;
+    align-items: center;
+}
+
+nav a:hover {
+    background-color: lightgrey; /* Highlight color on hover */
+    border-radius: 5px;
+    padding: 5px 10px;
+}
+/* Style the dropdown menu */
+/* Style the submenu */
+nav ul li .submenu {
+    display: none;
+    position: absolute;
+    background-color:black;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    border: 1px solid #ddd;
+}
+
+nav ul li .submenu li {
+    display: block;
+    padding: 10px 0; /* Add padding to create space between submenu items */
+}
+
+nav ul li:hover .submenu {
+    display: block; /* Show the submenu on hover */
+}
+
+/* Hero image styles */
+.hero img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.promotion-offer {
+    position: absolute;
+    top: 9%; /* Adjust the vertical position as needed */
+    left: 20%; /* Center horizontally */
+    transform: translateX(-50%); /* Center precisely horizontally */
+    background-color: rgba(0, 0, 0, 0.7); /* Semi-transparent background color */
+    color: #fff; /* Text color */
+    padding: 10px 20px; /* Adjust padding as needed */
+    border-radius: 5px;
+    font-weight: bold;
+    font-size: 18px; /* Adjust font size as needed */
+    text-align: center; /* Center-align text */
+}

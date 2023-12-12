@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="booking.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="booking.js" defer></script>
+  </head>
+  <body>
+    
+    <!-- Logo -->
+    <div class="logo">
+      <img src="/photos/logo.webp" alt="Your Hotel Logo">
+    </div>
+    
+    
+    <!-- Navigation Bar -->
+    <!-- Navigation Bar -->
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="hotelbranch.html">Hotel Branch</a></li>
+        <li><a href="adventure.html">Adventures</a></li>
+        <li><a href="booking.html">Booking</a></li>
+        <li class="events-dropdown">
+          <a href="restaurant.html">Reastaurant</a>
+          <ul class="submenu">
+            <li><a href="event1.html">Event 1</a></li>
+            <li><a href="event2.html">Event 2</a></li>
+            
+          </ul>
+        </li>
+        
+      </ul>
+</nav>
+
+
+    <!-- Hero Image -->
+    <div class="hero">
+        <img src="/photos/book.jpg" alt="Welcome to our Hotel">
+        <div class="hero-content">
+           <p class="promotion-offer">Special Promotion Offer: Get a Free Massage after booking with us</p>
+        </div> 
+      </div>
+      
+      <div class="booking-section">
+        <h3>Guest Information</h3>
+        <div class="name">
+          <label for="name">Name:</label>
+          <input type="text" name="name" id="name" required>
+        </div>
+        <div class="email">
+          <label for="email">Email:</label>
+          <input type="email" name="email" id="email" required>
+        </div>
+        <div class="phone-number">
+            <label for="phoneNumber">Phone Number:</label>
+            <input type="tel" name="phoneNumber" id="phoneNumber" required>
+          </div>
+          <div class="address">
+            <label for="address">Address:</label>
+            <input type="text" name="address" id="address" required>
+          </div>
+          <div class="city">
+            <label for="city">City:</label>
+            <input type="text" name="city" id="city" required>
+          </div>
+          <div class="country">
+            <label for="country">Country:</label>
+            <input type="text" name="country" id="country" required>
+              
+          </div>
+          <div class="postal-code">
+            <label for="postalCode">Postal Code:</label>
+            <input type="text" name="postalCode" id="postalCode" required>
+          </div>
+        </div>
+
+      <div class="booking-section">
+        <h3>Room Booking</h3>
+        <div class="room-type">
+          <label for="roomType">Room Type:</label>
+          <select name="roomType" id="roomType">
+            <option
+       
+            value="single">Single Room</option>
+            
+            
+            <option
+            
+            value="double">Double Room</option>
+            
+            
+      <option
+       
+      value="triple">Triple Room</option>
+      
+          
+      </select>
+      
+        
+      </div>
+      
+        
+      <div
+       
+      class="extra-bed">
+          <label for="extraBed">Extra Bed(s):</label>
+          <select name="extraBed" id="extraBed">
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+          </select>
+        </div>
+        <div class="check-in-date">
+          <label for="checkInDate">Check-in Date:</label>
+          <input type="date" name="checkInDate" id="checkInDate">
+        </div>
+        <div class="check-out-date">
+          <label for="checkOutDate">Check-out Date:</label>
+          <input type="date" name="checkOutDate" id="checkOutDate">
+        </div>
+        <div class="number-of-rooms">
+          <label for="numberOfRooms">Number of Rooms:</label>
+          <input type="number" name="numberOfRooms" id="numberOfRooms" min="1" value="1">
+        </div>
+      </div>
+
+      <div class="booking-section">
+        <h3>Adventure Booking</h3>
+        <div class="adventure-type">
+          <label for="adventureType">Adventure Type:</label>
+          <select name="adventureType" id="adventureType">
+            <option value="diving">Diving</option>
+            <option value="biking">Biking</option>
+            <option value="hot-air-ballooning">Hot Air Ballooning</option>
+          </select>
+        </div>
+        <div class="adult-count">
+          <label for="adultCount">Local Adults:</label>
+          <input type="number" name="adultCount" id="adultCount" min="0" value="0">
+        </div>
+        <div class="child-count">
+          <label for="childCount">Local Children:</label>
+          <input type="number" name="childCount" id="childCount" min="0" value="0">
+        </div>
+        <div class="foreign-adult-count">
+          <label for="foreignAdultCount">Foreign Adults:</label>
+          <input type="number" name="foreignAdultCount" id="foreignAdultCount" min="0" value="0">
+        </div>
+        <div class="foreign-child-count">
+          <label for="foreignChildCount">Foreign Children:</label>
+          <input type="number" name="foreignChildCount" id="foreignChildCount" min="0" value="0">
+        </div>
+        <div class="adult-guide-selection">
+          <label for="adultGuideSelection">Adult Guides:</label>
+          <select name="adultGuideSelection" id="adultGuideSelection">
+            <option value="0">0</option>
+            <option value="1">1</option>
+            <option value="2">2</option>
+          </select>
+        </div>
+        <div class="children-guide-selection">
+          <label for="childrenGuideSelection">Children Guides:</label>
+          <select name="childrenGuideSelection" id="childrenGuideSelection">
+            <option value="0">0</option>
+            <option value="1">1</option>
+            <option value="2">2</option>
+          </select>
+        </div>
+      </div>
+
+      <!-- ... Your existing HTML code ... -->
+
+<div class="booking-section">
+  <h3>Extra Requirements</h3>
+  <div class="wifi">
+      <label for="wifi">WiFi:</label>
+      <select name="wifi" id="wifi">
+        <option value="no">No</option>
+        <option value="yes">Yes</option>
+      </select>
+  </div>
+  <div class="pool-view">
+      <label for="poolView">Pool View:</label>
+      <select name="poolView" id="poolView">
+        <option value="no">No</option>
+        <option value="yes">Yes</option>
+      </select>
+  </div>
+  <div class="garden-view">
+      <label for="gardenView">Garden View:</label>
+      <select name="gardenView" id="gardenView">
+          <option value="no">No</option>
+          <option value="yes">Yes</option>
+      </select>
+  </div>
+</div>
+
+
+
+
+          <div class="promo-code">
+            <label for="promoCode">Promo Code (Optional):</label>
+            <input type="text" name="promoCode" id="promoCode">
+          </div>
+          <table class="summary-table">
+            <thead>
+              <tr>
+                <th>Description</th>
+                <th>cost</th>
+                
+              </tr>
+            </thead>
+            <tbody>
+              </tbody>
+            <tfoot>
+              <tr>
+                <th>Room cost</th>
+                <td colspan="2" id="roomcostOutput"></td>
+              </tr>
+
+              <tr>
+                <th>Adventure cost</th>
+                <td colspan="2" id="adventurecost"></td>
+              </tr>
+              
+              <tr>
+                <th>Total Cost</th>
+                <td colspan="2" id="totalCost"></td>
+              </tr>
+              
+            </tfoot>
+          </table>
+          <div class="buttons">
+            <button id="confirmBooking">Confirm Booking</button>
+            <button id="advBook">Book Adventure</button>
+            <button id="addToFavorites">Add to Favorites</button>
+            <button id="checkPoints">Check Loyalty Points</button>
+          </div>
+
+
+          <div class="booking-favorites">
+            <h2>My Favorite Bookings</h2>
+            <table id="favorite-bookings-table">
+              <thead>
+                <tr>
+                  <th>Name</th>
+                  <th>E-mail</th>
+                  <th>Check in</th>
+                  <th>Check out</th>
+                  <th>Number of rooms</th>
+                  <th>Room cost</th>
+                  <th>Adventure cost</th>
+                  <th>Total Cost</th> 
+                </tr>
+                
+              </thead>
+              <thead id="favorite_add">
+
+              </thead>
+              <tbody>
+                </tbody>
+            </table>
+            
+          </div>
+          
+          
+
+           <!-- Footer -->
+<footer>
+    <div class="footer-content">
+        <div class="footer-logo">
+            <img src="/photos/logo.webp" alt="Your Hotel Logo">
+        </div>
+        <div class="footer-text">
+            <p>Follow us on social media</p>
+            
+            <a href="https://www.facebook.com/" class="fa fa-facebook"></a>
+            <a href="https://twitter.com/?lang=en" class="fa fa-twitter"></a>
+        </div>
+    </div>
+    <p>Serving and delivering excellent hospitality since 1996</p>
+</footer>
+
+
+          <script src="booking.js"></script>
+          
+                    
+</body>
+
+</html>

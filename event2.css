@@ -1,0 +1,273 @@
+/* Reset some default styles for better consistency */
+body, h1, h2, h3, p, ul, li {
+    margin: 0;
+    padding: 0;
+}
+
+/* Apply a background color and set font styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f2f2f2; /* Background color for the entire page */
+    color: #333; /* Text color */
+}
+
+/* Header styles */
+.header {
+    text-align: center;
+    background-color: #ffffff; /* Header background color */
+    padding: 20px;
+    
+}
+
+.header h1 {
+    font-size: 36px;
+    color: #333; /* Heading color */
+}
+
+.header p {
+    font-size: 18px;
+    color: #666; /* Subheading color */
+}
+
+/* Logo styles */
+.logo {
+    position: absolute; /* Position the logo absolutely */
+    top: 0; /* Align it to the top */
+    left: 0; /* Align it to the left */
+    padding: 0px; /* Add padding for spacing */
+}
+
+/* Adjust the logo's size as needed */
+.logo img {
+    width: auto; /* Set the desired width */
+    height: 70px; /* Maintain aspect ratio */
+}
+
+/* Navigation bar styles */
+nav {
+    background-color: black; /* Navbar background color */
+   
+}
+
+nav ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    padding: 28px;
+}
+
+nav li {
+    margin: 0 15px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #fff; /* Navbar link color */
+    font-weight: bold;
+}
+
+nav a:hover {
+    background-color: lightgrey; /* Highlight color on hover */
+    border-radius: 5px;
+    padding: 5px 10px;
+}
+/* Style the dropdown menu */
+/* Style the submenu */
+nav ul li .submenu {
+    display: none;
+    position: absolute;
+    background-color:black;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    border: 1px solid #ddd;
+}
+
+nav ul li .submenu li {
+    display: block;
+    padding: 10px 0; /* Add padding to create space between submenu items */
+}
+
+nav ul li:hover .submenu {
+    display: block; /* Show the submenu on hover */
+}
+
+/* Hero image styles */
+.hero img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+header {
+    background-color: lightgreen;
+    color: #fff;
+    text-align: center;
+    padding: 30px 0;
+}
+
+header h1 {
+    font-size: 36px;
+    margin-bottom: 10px;
+    color: darkmagenta;
+}
+
+
+.event-section {
+    padding: 40px;
+    text-align: center;
+    background-color: darkorchid;
+ 
+}
+
+.event-section h2 {
+    font-size: 50px;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.event-section img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 20px;
+    
+}
+
+.event-section p {
+    font-size: 20px;
+    line-height: 1.5;
+    color: darkgrey;
+}
+
+
+
+/* Responsive Styles */
+@media screen and (max-width: 768px) {
+    .event-section {
+        padding: 20px;
+    }
+}
+
+/* Styles for the footer */
+footer {
+    background-color: black;
+    color: #fff;
+    text-align: center;
+    padding: 7px 0;
+}
+
+.footer-content {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer-logo img {
+    max-width: 150px; /* Adjust the size as needed */
+    margin-bottom: 2px;
+  
+}
+
+.footer-text p {
+    margin: 0;
+}
+
+.social-link {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 10px;
+    font-size: 18px;
+}
+
+.social-link:hover {
+    text-decoration: underline;
+}
+
+.fa {
+    padding: 20px;
+    font-size: 30px;
+    width: 50px;
+    text-align: center;
+    text-decoration: none;
+  }
+  
+  /* Add a hover effect if you want */
+  .fa:hover {
+    opacity: 0.7;
+  }
+  
+  /* Set a specific color for each brand */
+  
+  /* Facebook */
+  .fa-facebook {
+    background: #3B5998;
+    color: white;
+  }
+  
+  /* Twitter */
+  .fa-twitter {
+    background: #55ACEE;
+    color: white;
+  }
+  
+
+
+/* CSS for the hovering animation */
+.hover-effect {
+    transition: transform 0.3s ease-in-out;
+}
+
+.hover-effect:hover {
+    transform: scale(1.1); /* Increase the size on hover */
+}
+
+
+@media (max-width: 768px) {
+    /* CSS for smaller screens */
+
+    /* Adjust styles to fit smaller screens here */
+}
+
+
+#menu{
+    display: none;
+}
+nav label{
+    display: none;
+
+}
+
+
+@media (max-width: 768px) {
+    /* CSS for smaller screens */
+
+    .subsections{
+        display: block;
+        
+    }
+    .subsection{
+        width: 100%;
+    }
+
+    .section-text{
+        text-align: center;
+    }
+    nav ul li{
+        font-size: 0.5em;
+    }
+    .logo{
+        display: none;
+    }
+    .hero-content{
+        font-size: x-small;
+
+    }
+    body{
+        margin: 5px;
+    }
+    .hero{
+        padding-left: 23px;
+    }
+    /* Adjust styles to fit smaller screens here */
+}
